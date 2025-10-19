@@ -53,7 +53,7 @@
 		<div class="text-gray-700 dark:text-gray-200">
 			<p class="text-[15px] leading-relaxed">
 				You've reached your message limit. Upgrade to Hugging Face PRO to continue using
-				HuggingChat.
+				VibeCaaSChat.
 			</p>
 			<p class="mt-3 text-[15px] italic leading-relaxed opacity-75">
 				It's also possible to use your PRO credits in your favorite AI tools.
@@ -62,7 +62,7 @@
 
 		<div class="flex flex-col gap-2.5">
 			<a
-				href="https://huggingface.co/subscribe/pro?from=HuggingChat"
+				href="https://huggingface.co/subscribe/pro?from=VibeCaaSChat"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="w-full rounded-xl bg-black px-5 py-2.5 text-center text-base font-medium text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"

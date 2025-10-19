@@ -42,7 +42,7 @@ class ConfigManager {
 	}
 
 	get isHuggingChat() {
-		return this.get("PUBLIC_APP_ASSETS") === "huggingchat";
+		return this.get("PUBLIC_APP_ASSETS") === "vibecaaschat";
 	}
 
 	async checkForUpdates() {

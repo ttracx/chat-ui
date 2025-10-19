@@ -234,7 +234,7 @@
 								{#if prov.provider}
 									<img
 										class="h-[14px] w-auto"
-										src={`${base}/huggingchat/providers/${prov.provider}.svg`}
+										src={`${base}/vibecaaschat/providers/${prov.provider}.svg`}
 										alt="{prov.provider} logo"
 									/>
 								{/if}

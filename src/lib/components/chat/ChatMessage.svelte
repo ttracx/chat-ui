@@ -195,7 +195,7 @@
 								class="flex items-center gap-1 truncate rounded bg-gray-100 pl-1 pr-1.5 font-mono dark:bg-gray-800 max-sm:hidden sm:py-px"
 							>
 								<img
-									src={`${base}/huggingchat/providers/${message.routerMetadata.provider}.svg`}
+									src={`${base}/vibecaaschat/providers/${message.routerMetadata.provider}.svg`}
 									alt="{message.routerMetadata.provider} logo"
 									class="size-2.5 flex-none"
 									onerror={(e) => ((e.currentTarget as HTMLImageElement).style.display = "none")}

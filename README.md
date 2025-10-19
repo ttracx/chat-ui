@@ -2,7 +2,7 @@
 
 ![Chat UI repository thumbnail](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/chat-ui/chat-ui-2026.png)
 
-A chat interface for LLMs. It is a SvelteKit app and it powers the [HuggingChat app on hf.co/chat](https://huggingface.co/chat).
+A chat interface for LLMs. It is a SvelteKit app and it powers the [VibeCaaSChat app on hf.co/chat](https://huggingface.co/chat).
 
 0. [Quickstart](#quickstart)
 1. [Database Options](#database-options)

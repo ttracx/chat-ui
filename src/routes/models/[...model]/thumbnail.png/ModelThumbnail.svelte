@@ -1,5 +1,5 @@
 <script lang="ts">
-	import logo from "../../../../../static/huggingchat/fulltext-logo.svg?raw";
+	import logo from "../../../../../static/vibecaaschat/fulltext-logo.svg?raw";
 
 	interface Props {
 		name: string;

@@ -31,7 +31,7 @@ class PublicConfigManager {
 	}
 
 	get isHuggingChat() {
-		return this.#configStore.PUBLIC_APP_ASSETS === "huggingchat";
+		return this.#configStore.PUBLIC_APP_ASSETS === "vibecaaschat";
 	}
 
 	get assetPath() {

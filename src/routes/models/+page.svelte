@@ -28,10 +28,10 @@
 
 <svelte:head>
 	{#if publicConfig.isHuggingChat}
-		<title>HuggingChat - Models</title>
-		<meta property="og:title" content="HuggingChat - Models" />
+		<title>VibeCaaSChat - Models</title>
+		<meta property="og:title" content="VibeCaaSChat - Models" />
 		<meta property="og:type" content="link" />
-		<meta property="og:description" content="Browse HuggingChat available models" />
+		<meta property="og:description" content="Browse VibeCaaSChat available models" />
 		<meta property="og:url" content={page.url.href} />
 	{/if}
 </svelte:head>

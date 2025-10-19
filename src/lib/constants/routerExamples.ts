@@ -44,7 +44,7 @@ export const routerExamples: RouterExample[] = [
 		prompt: "is this a real painting?",
 		attachments: [
 			{
-				src: "huggingchat/castle-example.jpg",
+				src: "vibecaaschat/castle-example.jpg",
 			},
 		],
 	},

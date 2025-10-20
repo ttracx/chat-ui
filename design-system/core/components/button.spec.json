@@ -1,0 +1,155 @@
+{
+  "name": "Button",
+  "description": "Interactive element that triggers an action when clicked",
+  "category": "Action",
+  "variants": {
+    "primary": {
+      "description": "Primary action button",
+      "styles": {
+        "background": "{color.primary.500}",
+        "color": "{color.base.white}",
+        "hoverBackground": "{color.primary.600}",
+        "activeBackground": "{color.primary.700}",
+        "focusRing": "{shadow.focus.default}"
+      }
+    },
+    "secondary": {
+      "description": "Secondary action button",
+      "styles": {
+        "background": "{color.secondary.500}",
+        "color": "{color.base.white}",
+        "hoverBackground": "{color.secondary.600}",
+        "activeBackground": "{color.secondary.700}",
+        "focusRing": "{shadow.focus.success}"
+      }
+    },
+    "tertiary": {
+      "description": "Low emphasis action",
+      "styles": {
+        "background": "transparent",
+        "color": "{color.primary.600}",
+        "hoverBackground": "{color.gray.50}",
+        "activeBackground": "{color.gray.100}",
+        "focusRing": "{shadow.focus.default}"
+      }
+    },
+    "ghost": {
+      "description": "Minimal emphasis button",
+      "styles": {
+        "background": "transparent",
+        "color": "{color.text.primary}",
+        "hoverBackground": "{color.gray.100}",
+        "activeBackground": "{color.gray.200}",
+        "focusRing": "{shadow.focus.default}"
+      }
+    },
+    "danger": {
+      "description": "Destructive action button",
+      "styles": {
+        "background": "{color.semantic.error.main}",
+        "color": "{color.base.white}",
+        "hoverBackground": "{color.semantic.error.dark}",
+        "activeBackground": "{color.semantic.error.dark}",
+        "focusRing": "{shadow.focus.error}"
+      }
+    }
+  },
+  "sizes": {
+    "small": {
+      "fontSize": "{font.size.sm}",
+      "paddingX": "{padding.button.small.x}",
+      "paddingY": "{padding.button.small.y}",
+      "height": "32px",
+      "minWidth": "64px",
+      "iconSize": "16px"
+    },
+    "medium": {
+      "fontSize": "{font.size.base}",
+      "paddingX": "{padding.button.medium.x}",
+      "paddingY": "{padding.button.medium.y}",
+      "height": "40px",
+      "minWidth": "80px",
+      "iconSize": "20px"
+    },
+    "large": {
+      "fontSize": "{font.size.lg}",
+      "paddingX": "{padding.button.large.x}",
+      "paddingY": "{padding.button.large.y}",
+      "height": "48px",
+      "minWidth": "96px",
+      "iconSize": "24px"
+    }
+  },
+  "states": {
+    "default": {
+      "cursor": "pointer",
+      "transition": "{animation.transition.default}"
+    },
+    "hover": {
+      "transform": "translateY(-1px)",
+      "shadow": "{shadow.elevation.2}"
+    },
+    "active": {
+      "transform": "translateY(0)",
+      "shadow": "{shadow.elevation.1}"
+    },
+    "focus": {
+      "outline": "none",
+      "shadow": "focusRing"
+    },
+    "disabled": {
+      "opacity": "0.5",
+      "cursor": "not-allowed",
+      "pointerEvents": "none"
+    },
+    "loading": {
+      "cursor": "wait",
+      "pointerEvents": "none"
+    }
+  },
+  "properties": {
+    "borderRadius": "{border.radius.md}",
+    "fontWeight": "{font.weight.medium}",
+    "letterSpacing": "{font.letterSpacing.wide}",
+    "textTransform": "none",
+    "display": "inline-flex",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "gap": "{gap.sm}",
+    "position": "relative",
+    "userSelect": "none"
+  },
+  "accessibility": {
+    "role": "button",
+    "ariaPressed": "false",
+    "tabIndex": "0",
+    "focusVisible": true,
+    "keyboardSupport": {
+      "Enter": "activate",
+      "Space": "activate"
+    },
+    "minTouchTarget": "44px",
+    "contrastRatio": "4.5:1"
+  },
+  "examples": {
+    "withIcon": {
+      "description": "Button with leading or trailing icon",
+      "iconPosition": ["leading", "trailing"],
+      "iconSpacing": "{gap.sm}"
+    },
+    "iconOnly": {
+      "description": "Button with only an icon",
+      "aspectRatio": "1:1",
+      "padding": "{spacing.2}"
+    },
+    "fullWidth": {
+      "description": "Button that spans full container width",
+      "width": "100%"
+    },
+    "buttonGroup": {
+      "description": "Multiple buttons grouped together",
+      "gap": "{gap.sm}",
+      "orientation": ["horizontal", "vertical"]
+    }
+  }
+}

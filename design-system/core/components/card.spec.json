@@ -1,0 +1,131 @@
+{
+  "name": "Card",
+  "description": "Container component for grouping related content",
+  "category": "Layout",
+  "variants": {
+    "elevated": {
+      "description": "Card with shadow elevation",
+      "shadow": "{shadow.elevation.2}",
+      "hoverShadow": "{shadow.elevation.3}"
+    },
+    "outlined": {
+      "description": "Card with border",
+      "border": "{border.width.thin} {border.style.solid} {color.border.light}",
+      "shadow": "none"
+    },
+    "filled": {
+      "description": "Card with background color",
+      "background": "{color.gray.50}",
+      "border": "none",
+      "shadow": "none"
+    },
+    "interactive": {
+      "description": "Clickable card",
+      "cursor": "pointer",
+      "transition": "{animation.transition.default}",
+      "hoverTransform": "translateY(-2px)"
+    }
+  },
+  "sizes": {
+    "small": {
+      "padding": "{padding.card.small}",
+      "gap": "{gap.sm}"
+    },
+    "medium": {
+      "padding": "{padding.card.medium}",
+      "gap": "{gap.md}"
+    },
+    "large": {
+      "padding": "{padding.card.large}",
+      "gap": "{gap.lg}"
+    }
+  },
+  "sections": {
+    "header": {
+      "padding": "{padding.card.medium}",
+      "borderBottom": "{border.width.thin} {border.style.solid} {color.border.light}",
+      "display": "flex",
+      "alignItems": "center",
+      "justifyContent": "space-between"
+    },
+    "body": {
+      "padding": "{padding.card.medium}",
+      "flex": "1"
+    },
+    "footer": {
+      "padding": "{padding.card.medium}",
+      "borderTop": "{border.width.thin} {border.style.solid} {color.border.light}",
+      "display": "flex",
+      "alignItems": "center",
+      "justifyContent": "flex-end",
+      "gap": "{gap.sm}"
+    },
+    "media": {
+      "position": "relative",
+      "width": "100%",
+      "aspectRatio": "16/9",
+      "overflow": "hidden",
+      "borderRadius": "{border.radius.md}"
+    },
+    "overlay": {
+      "position": "absolute",
+      "top": "0",
+      "left": "0",
+      "right": "0",
+      "bottom": "0",
+      "background": "linear-gradient(to bottom, transparent, rgba(0,0,0,0.6))",
+      "display": "flex",
+      "alignItems": "flex-end",
+      "padding": "{padding.card.medium}"
+    }
+  },
+  "properties": {
+    "background": "{color.background.elevated}",
+    "borderRadius": "{border.radius.lg}",
+    "overflow": "hidden",
+    "display": "flex",
+    "flexDirection": "column",
+    "position": "relative"
+  },
+  "states": {
+    "default": {
+      "background": "{color.background.elevated}"
+    },
+    "hover": {
+      "shadow": "{shadow.elevation.3}"
+    },
+    "selected": {
+      "borderColor": "{color.primary.500}",
+      "borderWidth": "{border.width.medium}"
+    },
+    "disabled": {
+      "opacity": "0.6",
+      "cursor": "not-allowed"
+    }
+  },
+  "compositions": {
+    "horizontal": {
+      "flexDirection": "row",
+      "alignItems": "center",
+      "gap": "{gap.md}"
+    },
+    "compact": {
+      "padding": "{padding.card.small}",
+      "gap": "{gap.xs}"
+    },
+    "mediaCard": {
+      "mediaPosition": ["top", "left", "right", "background"],
+      "contentPadding": "{padding.card.medium}"
+    },
+    "listCard": {
+      "divider": "{border.width.thin} {border.style.solid} {color.border.light}",
+      "itemPadding": "{spacing.2}"
+    }
+  },
+  "accessibility": {
+    "role": "article",
+    "ariaLabel": "Card content",
+    "focusable": false,
+    "semanticHTML": "article"
+  }
+}

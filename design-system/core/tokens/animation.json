@@ -1,0 +1,40 @@
+{
+  "animation": {
+    "duration": {
+      "instant": { "value": "0ms" },
+      "fast": { "value": "150ms" },
+      "normal": { "value": "250ms" },
+      "slow": { "value": "350ms" },
+      "slower": { "value": "500ms" },
+      "slowest": { "value": "700ms" }
+    },
+    "easing": {
+      "linear": { "value": "linear" },
+      "easeIn": { "value": "cubic-bezier(0.4, 0, 1, 1)" },
+      "easeOut": { "value": "cubic-bezier(0, 0, 0.2, 1)" },
+      "easeInOut": { "value": "cubic-bezier(0.4, 0, 0.2, 1)" },
+      "bounce": { "value": "cubic-bezier(0.68, -0.55, 0.265, 1.55)" },
+      "spring": { "value": "cubic-bezier(0.175, 0.885, 0.32, 1.275)" }
+    },
+    "transition": {
+      "default": { 
+        "value": "all {animation.duration.normal} {animation.easing.easeInOut}" 
+      },
+      "fast": { 
+        "value": "all {animation.duration.fast} {animation.easing.easeOut}" 
+      },
+      "slow": { 
+        "value": "all {animation.duration.slow} {animation.easing.easeInOut}" 
+      },
+      "opacity": {
+        "value": "opacity {animation.duration.normal} {animation.easing.easeInOut}"
+      },
+      "transform": {
+        "value": "transform {animation.duration.normal} {animation.easing.easeInOut}"
+      },
+      "color": {
+        "value": "background-color {animation.duration.fast} {animation.easing.easeInOut}, color {animation.duration.fast} {animation.easing.easeInOut}, border-color {animation.duration.fast} {animation.easing.easeInOut}"
+      }
+    }
+  }
+}

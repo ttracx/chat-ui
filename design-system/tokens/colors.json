@@ -1,0 +1,284 @@
+{
+  "$schema": "./schema.json",
+  "version": "1.0.0",
+  "colors": {
+    "primary": {
+      "50": {
+        "value": "#F0F9FF",
+        "rgb": "240, 249, 255",
+        "description": "Lightest primary color for backgrounds and subtle accents",
+        "contrast": {
+          "onWhite": 1.05,
+          "onBlack": 19.89,
+          "wcag": "AAA for large text on dark backgrounds"
+        }
+      },
+      "100": {
+        "value": "#E0F2FE",
+        "rgb": "224, 242, 254",
+        "description": "Very light primary for hover states and highlights"
+      },
+      "200": {
+        "value": "#BAE6FD",
+        "rgb": "186, 230, 253",
+        "description": "Light primary for borders and dividers"
+      },
+      "300": {
+        "value": "#7DD3FC",
+        "rgb": "125, 211, 252",
+        "description": "Medium light primary for interactive elements"
+      },
+      "400": {
+        "value": "#38BDF8",
+        "rgb": "56, 189, 248",
+        "description": "Medium primary for secondary buttons and accents"
+      },
+      "500": {
+        "value": "#0EA5E9",
+        "rgb": "14, 165, 233",
+        "description": "Base primary color for main actions and branding",
+        "contrast": {
+          "onWhite": 3.94,
+          "onBlack": 5.33,
+          "wcag": "AA for normal text on white, AAA for large text"
+        }
+      },
+      "600": {
+        "value": "#0284C7",
+        "rgb": "2, 132, 199",
+        "description": "Darker primary for hover states on primary buttons"
+      },
+      "700": {
+        "value": "#0369A1",
+        "rgb": "3, 105, 161",
+        "description": "Dark primary for active states and emphasis"
+      },
+      "800": {
+        "value": "#075985",
+        "rgb": "7, 89, 133",
+        "description": "Very dark primary for high contrast needs"
+      },
+      "900": {
+        "value": "#0C4A6E",
+        "rgb": "12, 74, 110",
+        "description": "Darkest primary for text on light backgrounds"
+      }
+    },
+    "secondary": {
+      "50": {
+        "value": "#FAF5FF",
+        "rgb": "250, 245, 255",
+        "description": "Lightest secondary for subtle backgrounds"
+      },
+      "100": {
+        "value": "#F3E8FF",
+        "rgb": "243, 232, 255"
+      },
+      "200": {
+        "value": "#E9D5FF",
+        "rgb": "233, 213, 255"
+      },
+      "300": {
+        "value": "#D8B4FE",
+        "rgb": "216, 180, 254"
+      },
+      "400": {
+        "value": "#C084FC",
+        "rgb": "192, 132, 252"
+      },
+      "500": {
+        "value": "#A855F7",
+        "rgb": "168, 85, 247",
+        "description": "Base secondary color"
+      },
+      "600": {
+        "value": "#9333EA",
+        "rgb": "147, 51, 234"
+      },
+      "700": {
+        "value": "#7E22CE",
+        "rgb": "126, 34, 206"
+      },
+      "800": {
+        "value": "#6B21A8",
+        "rgb": "107, 33, 168"
+      },
+      "900": {
+        "value": "#581C87",
+        "rgb": "88, 28, 135"
+      }
+    },
+    "accent": {
+      "50": {
+        "value": "#FFF7ED",
+        "rgb": "255, 247, 237"
+      },
+      "100": {
+        "value": "#FFEDD5",
+        "rgb": "255, 237, 213"
+      },
+      "200": {
+        "value": "#FED7AA",
+        "rgb": "254, 215, 170"
+      },
+      "300": {
+        "value": "#FDBA74",
+        "rgb": "253, 186, 116"
+      },
+      "400": {
+        "value": "#FB923C",
+        "rgb": "251, 146, 60"
+      },
+      "500": {
+        "value": "#F97316",
+        "rgb": "249, 115, 22",
+        "description": "Base accent color for highlights and CTAs"
+      },
+      "600": {
+        "value": "#EA580C",
+        "rgb": "234, 88, 12"
+      },
+      "700": {
+        "value": "#C2410C",
+        "rgb": "194, 65, 12"
+      },
+      "800": {
+        "value": "#9A3412",
+        "rgb": "154, 52, 18"
+      },
+      "900": {
+        "value": "#7C2D12",
+        "rgb": "124, 45, 18"
+      }
+    },
+    "neutral": {
+      "0": {
+        "value": "#FFFFFF",
+        "rgb": "255, 255, 255",
+        "description": "Pure white for backgrounds"
+      },
+      "50": {
+        "value": "#F9FAFB",
+        "rgb": "249, 250, 251"
+      },
+      "100": {
+        "value": "#F3F4F6",
+        "rgb": "243, 244, 246"
+      },
+      "200": {
+        "value": "#E5E7EB",
+        "rgb": "229, 231, 235"
+      },
+      "300": {
+        "value": "#D1D5DB",
+        "rgb": "209, 213, 219"
+      },
+      "400": {
+        "value": "#9CA3AF",
+        "rgb": "156, 163, 175"
+      },
+      "500": {
+        "value": "#6B7280",
+        "rgb": "107, 114, 128",
+        "description": "Base neutral for borders and disabled states"
+      },
+      "600": {
+        "value": "#4B5563",
+        "rgb": "75, 85, 99"
+      },
+      "700": {
+        "value": "#374151",
+        "rgb": "55, 65, 81"
+      },
+      "800": {
+        "value": "#1F2937",
+        "rgb": "31, 41, 55"
+      },
+      "900": {
+        "value": "#111827",
+        "rgb": "17, 24, 39"
+      },
+      "950": {
+        "value": "#030712",
+        "rgb": "3, 7, 18",
+        "description": "Near black for dark mode backgrounds"
+      }
+    },
+    "semantic": {
+      "success": {
+        "50": "#F0FDF4",
+        "100": "#DCFCE7",
+        "500": "#22C55E",
+        "600": "#16A34A",
+        "700": "#15803D",
+        "description": "Success states and positive feedback",
+        "contrast": {
+          "500": {
+            "onWhite": 3.37,
+            "wcag": "AA for large text"
+          }
+        }
+      },
+      "warning": {
+        "50": "#FFFBEB",
+        "100": "#FEF3C7",
+        "500": "#EAB308",
+        "600": "#CA8A04",
+        "700": "#A16207",
+        "description": "Warning states and caution indicators"
+      },
+      "error": {
+        "50": "#FEF2F2",
+        "100": "#FEE2E2",
+        "500": "#EF4444",
+        "600": "#DC2626",
+        "700": "#B91C1C",
+        "description": "Error states and destructive actions",
+        "contrast": {
+          "500": {
+            "onWhite": 4.04,
+            "wcag": "AA for normal text"
+          }
+        }
+      },
+      "info": {
+        "50": "#EFF6FF",
+        "100": "#DBEAFE",
+        "500": "#3B82F6",
+        "600": "#2563EB",
+        "700": "#1D4ED8",
+        "description": "Informational messages and hints"
+      }
+    },
+    "transparent": {
+      "overlay": {
+        "light": "rgba(0, 0, 0, 0.5)",
+        "medium": "rgba(0, 0, 0, 0.7)",
+        "dark": "rgba(0, 0, 0, 0.9)",
+        "description": "Modal and overlay backgrounds"
+      },
+      "scrim": {
+        "light": "rgba(255, 255, 255, 0.8)",
+        "medium": "rgba(255, 255, 255, 0.9)",
+        "description": "Light overlay for cards and surfaces"
+      }
+    }
+  },
+  "darkMode": {
+    "description": "Dark mode color overrides",
+    "background": {
+      "primary": "#0F172A",
+      "secondary": "#1E293B",
+      "tertiary": "#334155"
+    },
+    "surface": {
+      "elevated": "#1E293B",
+      "overlay": "#334155"
+    },
+    "text": {
+      "primary": "#F8FAFC",
+      "secondary": "#CBD5E1",
+      "tertiary": "#94A3B8"
+    }
+  }
+}

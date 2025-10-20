@@ -1,0 +1,164 @@
+{
+  "$schema": "./schema.json",
+  "version": "1.0.0",
+  "spacing": {
+    "0": {
+      "value": "0",
+      "px": "0px",
+      "description": "No spacing"
+    },
+    "px": {
+      "value": "1px",
+      "px": "1px",
+      "description": "1 pixel, for hairline borders"
+    },
+    "0.5": {
+      "value": "0.125rem",
+      "px": "2px",
+      "description": "Minimal spacing"
+    },
+    "1": {
+      "value": "0.25rem",
+      "px": "4px",
+      "description": "Extra small spacing"
+    },
+    "1.5": {
+      "value": "0.375rem",
+      "px": "6px",
+      "description": "Between 1 and 2"
+    },
+    "2": {
+      "value": "0.5rem",
+      "px": "8px",
+      "description": "Small spacing, tight padding"
+    },
+    "2.5": {
+      "value": "0.625rem",
+      "px": "10px",
+      "description": "Between 2 and 3"
+    },
+    "3": {
+      "value": "0.75rem",
+      "px": "12px",
+      "description": "Medium-small spacing"
+    },
+    "3.5": {
+      "value": "0.875rem",
+      "px": "14px",
+      "description": "Between 3 and 4"
+    },
+    "4": {
+      "value": "1rem",
+      "px": "16px",
+      "description": "Base spacing unit"
+    },
+    "5": {
+      "value": "1.25rem",
+      "px": "20px",
+      "description": "Medium spacing"
+    },
+    "6": {
+      "value": "1.5rem",
+      "px": "24px",
+      "description": "Medium-large spacing"
+    },
+    "7": {
+      "value": "1.75rem",
+      "px": "28px",
+      "description": "Between 6 and 8"
+    },
+    "8": {
+      "value": "2rem",
+      "px": "32px",
+      "description": "Large spacing"
+    },
+    "9": {
+      "value": "2.25rem",
+      "px": "36px",
+      "description": "Between 8 and 10"
+    },
+    "10": {
+      "value": "2.5rem",
+      "px": "40px",
+      "description": "Extra large spacing"
+    },
+    "11": {
+      "value": "2.75rem",
+      "px": "44px",
+      "description": "Between 10 and 12"
+    },
+    "12": {
+      "value": "3rem",
+      "px": "48px",
+      "description": "2X large spacing"
+    },
+    "14": {
+      "value": "3.5rem",
+      "px": "56px",
+      "description": "Between 12 and 16"
+    },
+    "16": {
+      "value": "4rem",
+      "px": "64px",
+      "description": "3X large spacing"
+    },
+    "20": {
+      "value": "5rem",
+      "px": "80px",
+      "description": "4X large spacing"
+    },
+    "24": {
+      "value": "6rem",
+      "px": "96px",
+      "description": "5X large spacing"
+    },
+    "28": {
+      "value": "7rem",
+      "px": "112px",
+      "description": "6X large spacing"
+    },
+    "32": {
+      "value": "8rem",
+      "px": "128px",
+      "description": "7X large spacing"
+    },
+    "36": {
+      "value": "9rem",
+      "px": "144px",
+      "description": "8X large spacing"
+    },
+    "40": {
+      "value": "10rem",
+      "px": "160px",
+      "description": "Maximum spacing"
+    }
+  },
+  "componentSpacing": {
+    "button": {
+      "paddingX": "4",
+      "paddingY": "2",
+      "gap": "2",
+      "description": "Standard button padding"
+    },
+    "input": {
+      "paddingX": "3",
+      "paddingY": "2",
+      "description": "Form input padding"
+    },
+    "card": {
+      "padding": "6",
+      "gap": "4",
+      "description": "Card content padding"
+    },
+    "modal": {
+      "padding": "6",
+      "gap": "4",
+      "description": "Modal dialog padding"
+    },
+    "section": {
+      "paddingY": "12",
+      "gap": "8",
+      "description": "Page section spacing"
+    }
+  }
+}

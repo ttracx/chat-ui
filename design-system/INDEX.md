@@ -98,6 +98,66 @@
 
 ---
 
+## 🤖 AI Agents (NEW!)
+
+### Overview
+- [AI Agents System](./ai-agents/README.md) - Complete AI agent system
+- [System Overview](./ai-agents/SYSTEM-OVERVIEW.md) - Architecture and workflows
+- [Setup Guide](./ai-agents/README-SETUP.md) - Installation and configuration
+
+### AI Components
+
+#### Model Context Server (MCP)
+- [MCP Server](./ai-agents/mcp/server.ts) - Central coordination server
+- [Design System Context](./ai-agents/mcp/context.ts) - Knowledge management
+- **Port**: 3001
+- **API**: RESTful + WebSocket
+- **Features**: Context caching, agent coordination, metrics
+
+#### AI Agents
+- [Component Generator](./ai-agents/agents/component-generator.ts) - Creates components using GPT-4
+- [Design Reviewer](./ai-agents/agents/design-reviewer.ts) - Validates design consistency
+- [QA Agent](./ai-agents/agents/qa.ts) - Tests and validates components
+
+#### Core Infrastructure
+- [Agent Coordinator](./ai-agents/core/coordinator.ts) - Orchestrates multi-agent workflows
+- [Library Updater](./ai-agents/core/library-updater.ts) - Auto-updates packages
+- [Logger](./ai-agents/core/logger.ts) - Logging utility
+
+### AI Features
+✅ **Automated Component Generation** - Generate components for Web/iOS/Android  
+✅ **Design Validation** - AI-powered design consistency checks  
+✅ **Quality Assurance** - Automated testing and validation  
+✅ **Library Auto-Update** - Automatic package updates and versioning  
+✅ **Multi-Agent Coordination** - Complex multi-step workflows  
+✅ **OpenAI GPT-4 Integration** - Intelligent code generation  
+
+### Quick Start
+```bash
+# Install dependencies
+cd design-system/ai-agents
+npm install
+
+# Configure (add OpenAI API key)
+cp .env.example .env
+
+# Start MCP server
+npm run mcp:start
+
+# Generate a component
+npm run generate:component -- --name "Tooltip" --type "overlay"
+```
+
+### API Usage
+```bash
+# Generate component via API
+curl -X POST http://localhost:3001/api/generate/component \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Badge","type":"display","platforms":["web","ios","android"]}'
+```
+
+---
+
 ## 🎯 Platform Implementations
 
 ### Web
@@ -193,7 +253,7 @@
 
 ---
 
-## 🤖 Automation
+## 🔧 Automation
 
 ### Conversion Tools
 - [SwiftUI Converter](./automation/swiftui-converter.md)
@@ -207,6 +267,11 @@
   - Token extraction for Kotlin
   - Component generation
   - AI-assisted conversion
+
+### AI-Powered Tools (NEW!)
+- [Component Generator Agent](./ai-agents/agents/component-generator.ts) - Automated component creation
+- [Design Reviewer Agent](./ai-agents/agents/design-reviewer.ts) - AI design validation
+- [Library Auto-Updater](./ai-agents/core/library-updater.ts) - Automatic package management
 
 ---
 
@@ -272,18 +337,35 @@ design-system/
 │   ├── swiftui-converter.md
 │   └── jetpack-compose-converter.md
 │
+├── ai-agents/                      # AI Agent System (NEW!)
+│   ├── README.md
+│   ├── SYSTEM-OVERVIEW.md
+│   ├── package.json
+│   ├── mcp/                       # Model Context Server
+│   │   ├── server.ts
+│   │   └── context.ts
+│   ├── agents/                    # AI Agents
+│   │   ├── component-generator.ts
+│   │   ├── design-reviewer.ts
+│   │   └── qa.ts
+│   └── core/                      # Core utilities
+│       ├── coordinator.ts
+│       ├── library-updater.ts
+│       └── logger.ts
+│
 └── documentation/                  # Additional docs
     ├── getting-started.md
     ├── CONTRIBUTING.md
     └── version-control.md
 ```
 
-### Component Count
+### Statistics
 - **Design Tokens**: 6 comprehensive token files
 - **Components**: 6+ fully documented with all states
 - **Icons**: 100+ scalable vector icons
 - **Screens**: 20+ complete screen designs
 - **Platforms**: 3 (Web, iOS, Android)
+- **AI Agents**: 4 intelligent agents + MCP server
 
 ### Coverage
 - ✅ Design Tokens (Colors, Typography, Spacing, Effects, Animations)
@@ -294,6 +376,8 @@ design-system/
 - ✅ Interaction Patterns
 - ✅ Screen Designs (All platforms, responsive)
 - ✅ Automation Scripts (SwiftUI, Jetpack Compose)
+- ✅ **AI Agent System** (Component generation, validation, auto-update)
+- ✅ **Model Context Server** (Design system knowledge API)
 - ✅ Documentation (Getting Started, Contributing, API Reference)
 - ✅ Version Control Strategy
 
@@ -325,6 +409,50 @@ design-system/
 3. Import design system package
 4. Use [Compose Converter](./automation/jetpack-compose-converter.md)
 
+### Using AI Agents (NEW!)
+1. Install AI agents: `cd ai-agents && npm install`
+2. Configure OpenAI API key in `.env`
+3. Start MCP server: `npm run mcp:start`
+4. Generate components: `npm run generate:component -- --name "YourComponent"`
+5. Components are automatically created, reviewed, tested, and versioned!
+
+---
+
+## 🚀 AI-Powered Workflow
+
+### Traditional Component Creation
+1. Design in Figma (2-4 hours)
+2. Write documentation (1 hour)
+3. Code for Web (2-3 hours)
+4. Code for iOS (2-3 hours)
+5. Code for Android (2-3 hours)
+6. Write tests (1-2 hours)
+7. Review and revisions (1-2 hours)
+8. Update packages and docs (1 hour)
+
+**Total: 12-20 hours**
+
+### AI-Powered Component Creation
+1. Define component spec (5 minutes)
+2. Run AI generation (1 minute)
+3. Review AI output (10-15 minutes)
+4. Make adjustments if needed (5-10 minutes)
+5. Auto-tested, versioned, and documented
+
+**Total: 20-30 minutes** ⚡
+
+### What AI Agents Handle Automatically
+- ✅ Generate platform-specific code (Web, iOS, Android)
+- ✅ Create comprehensive documentation
+- ✅ Validate design consistency
+- ✅ Run accessibility checks
+- ✅ Execute QA tests
+- ✅ Update package exports
+- ✅ Update documentation index
+- ✅ Commit to git with proper message
+- ✅ Bump version number
+- ✅ Generate TypeScript types
+
 ---
 
 ## 📞 Support
@@ -333,8 +461,10 @@ design-system/
 - **Issues**: File bugs and feature requests
 - **Discussions**: Ask questions and share ideas
 - **Contributing**: See [Contributing Guide](./documentation/CONTRIBUTING.md)
+- **AI Agents Support**: #design-system-ai Slack channel
 
 ---
 
 **Maintained by**: VibeCaaS Design System Team  
+**AI System by**: VibeCaaS AI Team  
 **License**: Copyright © 2025 VibeCaaS. All rights reserved.

@@ -1,0 +1,129 @@
+{
+  "$schema": "./schema.json",
+  "version": "1.0.0",
+  "shadows": {
+    "none": {
+      "value": "none",
+      "description": "No shadow"
+    },
+    "xs": {
+      "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "description": "Extra small shadow for subtle depth",
+      "blur": "2px",
+      "spread": "0",
+      "offset": "0 1px"
+    },
+    "sm": {
+      "value": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+      "description": "Small shadow for cards and buttons",
+      "usage": "Default card shadow"
+    },
+    "md": {
+      "value": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      "description": "Medium shadow for elevated elements",
+      "usage": "Dropdowns, popovers"
+    },
+    "lg": {
+      "value": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      "description": "Large shadow for modals",
+      "usage": "Modal dialogs, drawers"
+    },
+    "xl": {
+      "value": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+      "description": "Extra large shadow for major elevations",
+      "usage": "Full-screen overlays"
+    },
+    "2xl": {
+      "value": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+      "description": "Maximum shadow for dramatic effect"
+    },
+    "inner": {
+      "value": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
+      "description": "Inner shadow for pressed states"
+    }
+  },
+  "borderRadius": {
+    "none": {
+      "value": "0",
+      "description": "No rounding"
+    },
+    "sm": {
+      "value": "0.125rem",
+      "px": "2px",
+      "description": "Subtle rounding"
+    },
+    "base": {
+      "value": "0.25rem",
+      "px": "4px",
+      "description": "Default border radius"
+    },
+    "md": {
+      "value": "0.375rem",
+      "px": "6px",
+      "description": "Medium rounding"
+    },
+    "lg": {
+      "value": "0.5rem",
+      "px": "8px",
+      "description": "Large rounding for cards"
+    },
+    "xl": {
+      "value": "0.75rem",
+      "px": "12px",
+      "description": "Extra large rounding"
+    },
+    "2xl": {
+      "value": "1rem",
+      "px": "16px",
+      "description": "2X large rounding"
+    },
+    "3xl": {
+      "value": "1.5rem",
+      "px": "24px",
+      "description": "3X large rounding"
+    },
+    "full": {
+      "value": "9999px",
+      "description": "Fully rounded (pills, circles)"
+    }
+  },
+  "opacity": {
+    "0": "0",
+    "5": "0.05",
+    "10": "0.1",
+    "20": "0.2",
+    "25": "0.25",
+    "30": "0.3",
+    "40": "0.4",
+    "50": "0.5",
+    "60": "0.6",
+    "70": "0.7",
+    "75": "0.75",
+    "80": "0.8",
+    "90": "0.9",
+    "95": "0.95",
+    "100": "1"
+  },
+  "blur": {
+    "none": "0",
+    "sm": "4px",
+    "base": "8px",
+    "md": "12px",
+    "lg": "16px",
+    "xl": "24px",
+    "2xl": "40px",
+    "3xl": "64px"
+  },
+  "zIndex": {
+    "base": 0,
+    "dropdown": 1000,
+    "sticky": 1020,
+    "fixed": 1030,
+    "modalBackdrop": 1040,
+    "modal": 1050,
+    "popover": 1060,
+    "tooltip": 1070,
+    "notification": 1080,
+    "max": 9999
+  }
+}

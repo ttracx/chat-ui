@@ -1,0 +1,200 @@
+{
+  "$schema": "./schema.json",
+  "version": "1.0.0",
+  "duration": {
+    "instant": {
+      "value": "50ms",
+      "description": "Immediate feedback, instant changes"
+    },
+    "fast": {
+      "value": "100ms",
+      "description": "Quick transitions, hover states"
+    },
+    "normal": {
+      "value": "200ms",
+      "description": "Default animation duration"
+    },
+    "moderate": {
+      "value": "300ms",
+      "description": "Moderate animations, slide-ins"
+    },
+    "slow": {
+      "value": "400ms",
+      "description": "Slow, deliberate animations"
+    },
+    "slower": {
+      "value": "600ms",
+      "description": "Very slow, emphasized animations"
+    },
+    "slowest": {
+      "value": "1000ms",
+      "description": "Maximum duration, special effects"
+    }
+  },
+  "easing": {
+    "linear": {
+      "value": "cubic-bezier(0, 0, 1, 1)",
+      "css": "linear",
+      "description": "Constant speed, no acceleration"
+    },
+    "easeIn": {
+      "value": "cubic-bezier(0.4, 0, 1, 1)",
+      "css": "ease-in",
+      "description": "Slow start, fast end"
+    },
+    "easeOut": {
+      "value": "cubic-bezier(0, 0, 0.2, 1)",
+      "css": "ease-out",
+      "description": "Fast start, slow end (recommended for exits)"
+    },
+    "easeInOut": {
+      "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "css": "ease-in-out",
+      "description": "Slow start and end (recommended for entrances)"
+    },
+    "sharp": {
+      "value": "cubic-bezier(0.4, 0, 0.6, 1)",
+      "description": "Quick, snappy feel"
+    },
+    "bounce": {
+      "value": "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+      "description": "Bouncy, playful effect"
+    },
+    "smooth": {
+      "value": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+      "description": "Very smooth, elegant motion"
+    }
+  },
+  "transitions": {
+    "fade": {
+      "property": "opacity",
+      "duration": "normal",
+      "easing": "easeInOut",
+      "description": "Fade in/out transition"
+    },
+    "slideUp": {
+      "property": "transform",
+      "duration": "moderate",
+      "easing": "easeOut",
+      "transform": "translateY(0)",
+      "from": "translateY(16px)",
+      "description": "Slide up from below"
+    },
+    "slideDown": {
+      "property": "transform",
+      "duration": "moderate",
+      "easing": "easeOut",
+      "transform": "translateY(0)",
+      "from": "translateY(-16px)",
+      "description": "Slide down from above"
+    },
+    "scale": {
+      "property": "transform",
+      "duration": "fast",
+      "easing": "easeOut",
+      "transform": "scale(1)",
+      "from": "scale(0.95)",
+      "description": "Scale up animation"
+    },
+    "all": {
+      "property": "all",
+      "duration": "normal",
+      "easing": "easeInOut",
+      "description": "Transition all properties (use sparingly)"
+    }
+  },
+  "keyframes": {
+    "spin": {
+      "name": "spin",
+      "description": "Continuous rotation (loading spinners)",
+      "frames": {
+        "from": {
+          "transform": "rotate(0deg)"
+        },
+        "to": {
+          "transform": "rotate(360deg)"
+        }
+      }
+    },
+    "pulse": {
+      "name": "pulse",
+      "description": "Pulsing scale effect",
+      "frames": {
+        "0%, 100%": {
+          "opacity": "1"
+        },
+        "50%": {
+          "opacity": "0.5"
+        }
+      }
+    },
+    "bounce": {
+      "name": "bounce",
+      "description": "Bouncing animation",
+      "frames": {
+        "0%, 100%": {
+          "transform": "translateY(0)"
+        },
+        "50%": {
+          "transform": "translateY(-25%)"
+        }
+      }
+    },
+    "slideInRight": {
+      "name": "slideInRight",
+      "description": "Slide in from right",
+      "frames": {
+        "from": {
+          "transform": "translateX(100%)",
+          "opacity": "0"
+        },
+        "to": {
+          "transform": "translateX(0)",
+          "opacity": "1"
+        }
+      }
+    },
+    "fadeIn": {
+      "name": "fadeIn",
+      "description": "Simple fade in",
+      "frames": {
+        "from": {
+          "opacity": "0"
+        },
+        "to": {
+          "opacity": "1"
+        }
+      }
+    },
+    "shimmer": {
+      "name": "shimmer",
+      "description": "Shimmering loading effect",
+      "frames": {
+        "0%": {
+          "backgroundPosition": "-1000px 0"
+        },
+        "100%": {
+          "backgroundPosition": "1000px 0"
+        }
+      }
+    }
+  },
+  "microinteractions": {
+    "buttonPress": {
+      "scale": "0.98",
+      "duration": "instant",
+      "description": "Button press feedback"
+    },
+    "hoverLift": {
+      "translateY": "-2px",
+      "shadow": "lg",
+      "duration": "fast",
+      "description": "Lift effect on hover"
+    },
+    "ripple": {
+      "duration": "moderate",
+      "easing": "easeOut",
+      "description": "Material Design ripple effect"
+    }
+  }
+}

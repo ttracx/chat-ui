@@ -1,0 +1,261 @@
+{
+  "$schema": "./schema.json",
+  "version": "1.0.0",
+  "fontFamilies": {
+    "primary": {
+      "value": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif",
+      "description": "Primary font family for all UI text",
+      "platforms": {
+        "ios": "SF Pro Display",
+        "android": "Roboto",
+        "web": "Inter"
+      }
+    },
+    "mono": {
+      "value": "'JetBrains Mono', 'Fira Code', 'Courier New', monospace",
+      "description": "Monospace font for code and technical content",
+      "platforms": {
+        "ios": "SF Mono",
+        "android": "Roboto Mono",
+        "web": "JetBrains Mono"
+      }
+    },
+    "display": {
+      "value": "'Lexend', 'Inter', sans-serif",
+      "description": "Display font for headlines and hero sections",
+      "platforms": {
+        "ios": "SF Pro Display",
+        "android": "Roboto",
+        "web": "Lexend"
+      }
+    }
+  },
+  "fontWeights": {
+    "thin": {
+      "value": 100,
+      "description": "Rarely used, special cases only"
+    },
+    "extraLight": {
+      "value": 200,
+      "description": "Very light emphasis"
+    },
+    "light": {
+      "value": 300,
+      "description": "Light text, subtle content"
+    },
+    "regular": {
+      "value": 400,
+      "description": "Default body text weight"
+    },
+    "medium": {
+      "value": 500,
+      "description": "Slightly emphasized text"
+    },
+    "semibold": {
+      "value": 600,
+      "description": "Subheadings and important labels"
+    },
+    "bold": {
+      "value": 700,
+      "description": "Headings and strong emphasis"
+    },
+    "extrabold": {
+      "value": 800,
+      "description": "Display text and hero headings"
+    },
+    "black": {
+      "value": 900,
+      "description": "Maximum emphasis, use sparingly"
+    }
+  },
+  "fontSizes": {
+    "xs": {
+      "value": "0.75rem",
+      "px": "12px",
+      "lineHeight": "1rem",
+      "description": "Captions, labels, metadata"
+    },
+    "sm": {
+      "value": "0.875rem",
+      "px": "14px",
+      "lineHeight": "1.25rem",
+      "description": "Small body text, secondary information"
+    },
+    "base": {
+      "value": "1rem",
+      "px": "16px",
+      "lineHeight": "1.5rem",
+      "description": "Default body text size"
+    },
+    "lg": {
+      "value": "1.125rem",
+      "px": "18px",
+      "lineHeight": "1.75rem",
+      "description": "Large body text, lead paragraphs"
+    },
+    "xl": {
+      "value": "1.25rem",
+      "px": "20px",
+      "lineHeight": "1.75rem",
+      "description": "Small headings (h5)"
+    },
+    "2xl": {
+      "value": "1.5rem",
+      "px": "24px",
+      "lineHeight": "2rem",
+      "description": "Medium headings (h4)"
+    },
+    "3xl": {
+      "value": "1.875rem",
+      "px": "30px",
+      "lineHeight": "2.25rem",
+      "description": "Large headings (h3)"
+    },
+    "4xl": {
+      "value": "2.25rem",
+      "px": "36px",
+      "lineHeight": "2.5rem",
+      "description": "Extra large headings (h2)"
+    },
+    "5xl": {
+      "value": "3rem",
+      "px": "48px",
+      "lineHeight": "1",
+      "description": "Display headings (h1)"
+    },
+    "6xl": {
+      "value": "3.75rem",
+      "px": "60px",
+      "lineHeight": "1",
+      "description": "Hero headings"
+    },
+    "7xl": {
+      "value": "4.5rem",
+      "px": "72px",
+      "lineHeight": "1",
+      "description": "Extra large display text"
+    }
+  },
+  "lineHeights": {
+    "none": "1",
+    "tight": "1.25",
+    "snug": "1.375",
+    "normal": "1.5",
+    "relaxed": "1.625",
+    "loose": "2"
+  },
+  "letterSpacing": {
+    "tighter": "-0.05em",
+    "tight": "-0.025em",
+    "normal": "0em",
+    "wide": "0.025em",
+    "wider": "0.05em",
+    "widest": "0.1em"
+  },
+  "textStyles": {
+    "display1": {
+      "fontSize": "7xl",
+      "fontWeight": "extrabold",
+      "lineHeight": "none",
+      "letterSpacing": "tight",
+      "usage": "Hero sections, landing pages"
+    },
+    "display2": {
+      "fontSize": "6xl",
+      "fontWeight": "bold",
+      "lineHeight": "none",
+      "letterSpacing": "tight",
+      "usage": "Page titles, major sections"
+    },
+    "h1": {
+      "fontSize": "5xl",
+      "fontWeight": "bold",
+      "lineHeight": "tight",
+      "letterSpacing": "tight",
+      "usage": "Main page headings"
+    },
+    "h2": {
+      "fontSize": "4xl",
+      "fontWeight": "bold",
+      "lineHeight": "tight",
+      "usage": "Section headings"
+    },
+    "h3": {
+      "fontSize": "3xl",
+      "fontWeight": "semibold",
+      "lineHeight": "snug",
+      "usage": "Subsection headings"
+    },
+    "h4": {
+      "fontSize": "2xl",
+      "fontWeight": "semibold",
+      "lineHeight": "normal",
+      "usage": "Card titles, module headings"
+    },
+    "h5": {
+      "fontSize": "xl",
+      "fontWeight": "semibold",
+      "lineHeight": "normal",
+      "usage": "Component headings"
+    },
+    "h6": {
+      "fontSize": "lg",
+      "fontWeight": "semibold",
+      "lineHeight": "normal",
+      "usage": "Small component headings"
+    },
+    "body": {
+      "fontSize": "base",
+      "fontWeight": "regular",
+      "lineHeight": "relaxed",
+      "usage": "Default paragraph text"
+    },
+    "bodyLarge": {
+      "fontSize": "lg",
+      "fontWeight": "regular",
+      "lineHeight": "relaxed",
+      "usage": "Lead paragraphs, introductions"
+    },
+    "bodySmall": {
+      "fontSize": "sm",
+      "fontWeight": "regular",
+      "lineHeight": "normal",
+      "usage": "Secondary text, descriptions"
+    },
+    "caption": {
+      "fontSize": "xs",
+      "fontWeight": "regular",
+      "lineHeight": "normal",
+      "usage": "Labels, metadata, timestamps"
+    },
+    "label": {
+      "fontSize": "sm",
+      "fontWeight": "medium",
+      "lineHeight": "normal",
+      "letterSpacing": "wide",
+      "textTransform": "uppercase",
+      "usage": "Form labels, category tags"
+    },
+    "button": {
+      "fontSize": "base",
+      "fontWeight": "semibold",
+      "lineHeight": "none",
+      "letterSpacing": "wide",
+      "usage": "Button text"
+    },
+    "code": {
+      "fontFamily": "mono",
+      "fontSize": "sm",
+      "fontWeight": "regular",
+      "lineHeight": "normal",
+      "usage": "Inline code snippets"
+    },
+    "codeBlock": {
+      "fontFamily": "mono",
+      "fontSize": "sm",
+      "fontWeight": "regular",
+      "lineHeight": "relaxed",
+      "usage": "Code blocks"
+    }
+  }
+}

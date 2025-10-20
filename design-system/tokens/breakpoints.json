@@ -1,0 +1,85 @@
+{
+  "$schema": "./schema.json",
+  "version": "1.0.0",
+  "breakpoints": {
+    "xs": {
+      "value": "320px",
+      "description": "Extra small devices (small phones)",
+      "min": "320px",
+      "max": "479px"
+    },
+    "sm": {
+      "value": "480px",
+      "description": "Small devices (phones)",
+      "min": "480px",
+      "max": "767px"
+    },
+    "md": {
+      "value": "768px",
+      "description": "Medium devices (tablets)",
+      "min": "768px",
+      "max": "1023px"
+    },
+    "lg": {
+      "value": "1024px",
+      "description": "Large devices (desktops)",
+      "min": "1024px",
+      "max": "1279px"
+    },
+    "xl": {
+      "value": "1280px",
+      "description": "Extra large devices (large desktops)",
+      "min": "1280px",
+      "max": "1535px"
+    },
+    "2xl": {
+      "value": "1536px",
+      "description": "2X large devices (ultra-wide screens)",
+      "min": "1536px",
+      "max": null
+    }
+  },
+  "containers": {
+    "sm": {
+      "maxWidth": "640px",
+      "description": "Small container"
+    },
+    "md": {
+      "maxWidth": "768px",
+      "description": "Medium container"
+    },
+    "lg": {
+      "maxWidth": "1024px",
+      "description": "Large container"
+    },
+    "xl": {
+      "maxWidth": "1280px",
+      "description": "Extra large container"
+    },
+    "2xl": {
+      "maxWidth": "1536px",
+      "description": "2X large container"
+    },
+    "full": {
+      "maxWidth": "100%",
+      "description": "Full width container"
+    }
+  },
+  "grid": {
+    "columns": {
+      "mobile": 4,
+      "tablet": 8,
+      "desktop": 12
+    },
+    "gutter": {
+      "mobile": "16px",
+      "tablet": "24px",
+      "desktop": "32px"
+    },
+    "margin": {
+      "mobile": "16px",
+      "tablet": "32px",
+      "desktop": "48px"
+    }
+  }
+}

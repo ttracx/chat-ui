@@ -1,0 +1,479 @@
+{
+  "screens": [
+    {
+      "name": "Dashboard",
+      "type": "screen",
+      "title": "Dashboard",
+      "layout": "vertical",
+      "components": [
+        {
+          "type": "container",
+          "props": {
+            "type": "horizontal",
+            "spacing": 16,
+            "padding": 0
+          },
+          "children": [
+            {
+              "type": "card",
+              "props": {
+                "title": "Total Revenue",
+                "subtitle": "$124,563",
+                "variant": "elevated"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "props": {
+                    "text": "+12.5% from last month",
+                    "color": "success"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "props": {
+                "title": "Active Users",
+                "subtitle": "8,234",
+                "variant": "elevated"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "props": {
+                    "text": "+3.2% from last month",
+                    "color": "success"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "props": {
+                "title": "Conversion Rate",
+                "subtitle": "2.4%",
+                "variant": "elevated"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "props": {
+                    "text": "-0.3% from last month",
+                    "color": "error"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "props": {
+            "title": "Recent Transactions",
+            "variant": "elevated"
+          },
+          "children": [
+            {
+              "type": "list",
+              "props": {
+                "style": "plain"
+              },
+              "children": [
+                {
+                  "title": "Payment from John Doe",
+                  "subtitle": "$234.50",
+                  "icon": "CreditCard",
+                  "accessory": {
+                    "type": "text",
+                    "value": "2 min ago"
+                  }
+                },
+                {
+                  "title": "Subscription renewal",
+                  "subtitle": "$19.99",
+                  "icon": "Refresh",
+                  "accessory": {
+                    "type": "text",
+                    "value": "1 hour ago"
+                  }
+                },
+                {
+                  "title": "Payment from Jane Smith",
+                  "subtitle": "$567.00",
+                  "icon": "CreditCard",
+                  "accessory": {
+                    "type": "text",
+                    "value": "3 hours ago"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "props": {
+            "text": "View All Transactions",
+            "variant": "primary",
+            "size": "large",
+            "fullWidth": true,
+            "action": "navigateToTransactions()"
+          }
+        }
+      ]
+    },
+    {
+      "name": "UserProfile",
+      "type": "screen",
+      "title": "Profile",
+      "layout": "vertical",
+      "components": [
+        {
+          "type": "container",
+          "props": {
+            "type": "vertical",
+            "spacing": 24,
+            "padding": 16
+          },
+          "children": [
+            {
+              "type": "container",
+              "props": {
+                "type": "horizontal",
+                "spacing": 16
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "props": {
+                    "source": "profile_avatar",
+                    "width": 80,
+                    "height": 80,
+                    "rounded": true
+                  }
+                },
+                {
+                  "type": "container",
+                  "props": {
+                    "type": "vertical",
+                    "spacing": 4
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "text": "John Doe",
+                        "style": "heading",
+                        "size": "large"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "props": {
+                        "text": "john.doe@example.com",
+                        "style": "body",
+                        "color": "secondary"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "props": {
+                        "text": "Edit Profile",
+                        "variant": "tertiary",
+                        "size": "small",
+                        "icon": "Edit"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "props": {
+                "title": "Account Settings",
+                "variant": "outlined"
+              },
+              "children": [
+                {
+                  "type": "list",
+                  "props": {
+                    "style": "plain"
+                  },
+                  "children": [
+                    {
+                      "title": "Notifications",
+                      "subtitle": "Manage your notification preferences",
+                      "icon": "Bell",
+                      "accessory": {
+                        "type": "disclosure"
+                      }
+                    },
+                    {
+                      "title": "Privacy",
+                      "subtitle": "Control your privacy settings",
+                      "icon": "Lock",
+                      "accessory": {
+                        "type": "disclosure"
+                      }
+                    },
+                    {
+                      "title": "Dark Mode",
+                      "subtitle": "Toggle dark mode",
+                      "icon": "Moon",
+                      "accessory": {
+                        "type": "toggle",
+                        "binding": "isDarkMode"
+                      }
+                    },
+                    {
+                      "title": "Language",
+                      "subtitle": "English",
+                      "icon": "Globe",
+                      "accessory": {
+                        "type": "disclosure"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "props": {
+                "text": "Sign Out",
+                "variant": "danger",
+                "size": "large",
+                "fullWidth": true,
+                "action": "signOut()"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ProductList",
+      "type": "screen",
+      "title": "Products",
+      "layout": "vertical",
+      "components": [
+        {
+          "type": "input",
+          "props": {
+            "placeholder": "Search products...",
+            "type": "search",
+            "binding": "searchQuery"
+          }
+        },
+        {
+          "type": "container",
+          "props": {
+            "type": "horizontal",
+            "spacing": 8
+          },
+          "children": [
+            {
+              "type": "button",
+              "props": {
+                "text": "All",
+                "variant": "ghost",
+                "size": "small"
+              }
+            },
+            {
+              "type": "button",
+              "props": {
+                "text": "Electronics",
+                "variant": "ghost",
+                "size": "small"
+              }
+            },
+            {
+              "type": "button",
+              "props": {
+                "text": "Clothing",
+                "variant": "ghost",
+                "size": "small"
+              }
+            },
+            {
+              "type": "button",
+              "props": {
+                "text": "Books",
+                "variant": "ghost",
+                "size": "small"
+              }
+            }
+          ]
+        },
+        {
+          "type": "grid",
+          "props": {
+            "columns": 2,
+            "spacing": 16
+          },
+          "children": [
+            {
+              "type": "card",
+              "props": {
+                "image": "product_1",
+                "title": "Wireless Headphones",
+                "subtitle": "$199.99",
+                "variant": "elevated",
+                "clickable": true
+              }
+            },
+            {
+              "type": "card",
+              "props": {
+                "image": "product_2",
+                "title": "Smart Watch",
+                "subtitle": "$299.99",
+                "variant": "elevated",
+                "clickable": true
+              }
+            },
+            {
+              "type": "card",
+              "props": {
+                "image": "product_3",
+                "title": "Laptop Stand",
+                "subtitle": "$49.99",
+                "variant": "elevated",
+                "clickable": true
+              }
+            },
+            {
+              "type": "card",
+              "props": {
+                "image": "product_4",
+                "title": "USB-C Hub",
+                "subtitle": "$79.99",
+                "variant": "elevated",
+                "clickable": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "type": "screen",
+      "title": "Settings",
+      "layout": "vertical",
+      "components": [
+        {
+          "type": "list",
+          "props": {
+            "style": "grouped"
+          },
+          "children": [
+            {
+              "title": "Account",
+              "items": [
+                {
+                  "title": "Personal Information",
+                  "icon": "Person",
+                  "accessory": {
+                    "type": "disclosure"
+                  }
+                },
+                {
+                  "title": "Security",
+                  "icon": "Shield",
+                  "accessory": {
+                    "type": "disclosure"
+                  }
+                },
+                {
+                  "title": "Payment Methods",
+                  "icon": "CreditCard",
+                  "accessory": {
+                    "type": "disclosure"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Preferences",
+              "items": [
+                {
+                  "title": "Notifications",
+                  "icon": "Bell",
+                  "accessory": {
+                    "type": "toggle",
+                    "binding": "notificationsEnabled"
+                  }
+                },
+                {
+                  "title": "Dark Mode",
+                  "icon": "Moon",
+                  "accessory": {
+                    "type": "toggle",
+                    "binding": "darkModeEnabled"
+                  }
+                },
+                {
+                  "title": "Language",
+                  "icon": "Globe",
+                  "subtitle": "English",
+                  "accessory": {
+                    "type": "disclosure"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Support",
+              "items": [
+                {
+                  "title": "Help Center",
+                  "icon": "QuestionCircle",
+                  "accessory": {
+                    "type": "disclosure"
+                  }
+                },
+                {
+                  "title": "Contact Us",
+                  "icon": "Mail",
+                  "accessory": {
+                    "type": "disclosure"
+                  }
+                },
+                {
+                  "title": "About",
+                  "icon": "Info",
+                  "accessory": {
+                    "type": "disclosure"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "props": {
+            "type": "vertical",
+            "spacing": 16,
+            "padding": 16
+          },
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "text": "Version 1.0.0",
+                "style": "caption",
+                "color": "secondary",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "name": "Input",
+  "description": "Text input field for user data entry",
+  "category": "Form",
+  "types": {
+    "text": {
+      "description": "Standard text input"
+    },
+    "email": {
+      "description": "Email address input",
+      "validation": "email"
+    },
+    "password": {
+      "description": "Password input",
+      "masked": true
+    },
+    "number": {
+      "description": "Numeric input",
+      "validation": "numeric"
+    },
+    "search": {
+      "description": "Search input with icon",
+      "icon": "search",
+      "clearable": true
+    },
+    "tel": {
+      "description": "Telephone number input",
+      "validation": "phone"
+    },
+    "url": {
+      "description": "URL input",
+      "validation": "url"
+    },
+    "date": {
+      "description": "Date picker input"
+    },
+    "time": {
+      "description": "Time picker input"
+    },
+    "textarea": {
+      "description": "Multi-line text input",
+      "resizable": true
+    }
+  },
+  "sizes": {
+    "small": {
+      "fontSize": "{font.size.sm}",
+      "paddingX": "{padding.input.small.x}",
+      "paddingY": "{padding.input.small.y}",
+      "height": "32px"
+    },
+    "medium": {
+      "fontSize": "{font.size.base}",
+      "paddingX": "{padding.input.medium.x}",
+      "paddingY": "{padding.input.medium.y}",
+      "height": "40px"
+    },
+    "large": {
+      "fontSize": "{font.size.lg}",
+      "paddingX": "{padding.input.large.x}",
+      "paddingY": "{padding.input.large.y}",
+      "height": "48px"
+    }
+  },
+  "states": {
+    "default": {
+      "background": "{color.background.primary}",
+      "borderColor": "{color.border.default}",
+      "color": "{color.text.primary}",
+      "borderWidth": "{border.width.thin}"
+    },
+    "hover": {
+      "borderColor": "{color.border.dark}",
+      "background": "{color.background.primary}"
+    },
+    "focus": {
+      "borderColor": "{color.border.focus}",
+      "outline": "none",
+      "shadow": "{shadow.focus.default}"
+    },
+    "disabled": {
+      "background": "{color.gray.100}",
+      "borderColor": "{color.border.light}",
+      "color": "{color.text.disabled}",
+      "cursor": "not-allowed"
+    },
+    "error": {
+      "borderColor": "{color.semantic.error.main}",
+      "shadow": "{shadow.focus.error}"
+    },
+    "success": {
+      "borderColor": "{color.semantic.success.main}",
+      "shadow": "{shadow.focus.success}"
+    },
+    "readonly": {
+      "background": "{color.gray.50}",
+      "borderColor": "{color.border.light}",
+      "cursor": "default"
+    }
+  },
+  "properties": {
+    "borderRadius": "{border.radius.md}",
+    "borderStyle": "{border.style.solid}",
+    "fontFamily": "{font.family.sans}",
+    "lineHeight": "{font.lineHeight.normal}",
+    "transition": "{animation.transition.default}",
+    "width": "100%",
+    "display": "block",
+    "boxSizing": "border-box"
+  },
+  "components": {
+    "label": {
+      "fontSize": "{font.size.sm}",
+      "fontWeight": "{font.weight.medium}",
+      "color": "{color.text.primary}",
+      "marginBottom": "{spacing.1.5}",
+      "required": {
+        "indicator": "*",
+        "color": "{color.semantic.error.main}"
+      }
+    },
+    "helperText": {
+      "fontSize": "{font.size.xs}",
+      "color": "{color.text.secondary}",
+      "marginTop": "{spacing.1}"
+    },
+    "errorText": {
+      "fontSize": "{font.size.xs}",
+      "color": "{color.semantic.error.main}",
+      "marginTop": "{spacing.1}"
+    },
+    "prefix": {
+      "background": "{color.gray.50}",
+      "borderRight": "{border.width.thin} {border.style.solid} {color.border.light}",
+      "padding": "{padding.input.medium.x}",
+      "color": "{color.text.secondary}"
+    },
+    "suffix": {
+      "background": "{color.gray.50}",
+      "borderLeft": "{border.width.thin} {border.style.solid} {color.border.light}",
+      "padding": "{padding.input.medium.x}",
+      "color": "{color.text.secondary}"
+    },
+    "icon": {
+      "size": "20px",
+      "color": "{color.text.secondary}",
+      "position": ["leading", "trailing"]
+    }
+  },
+  "accessibility": {
+    "role": "textbox",
+    "ariaInvalid": "false",
+    "ariaRequired": "false",
+    "ariaDescribedby": "helper-text",
+    "autoComplete": "on",
+    "spellCheck": "true",
+    "tabIndex": "0",
+    "focusVisible": true,
+    "contrastRatio": "4.5:1"
+  },
+  "validation": {
+    "required": {
+      "message": "This field is required"
+    },
+    "minLength": {
+      "value": 1,
+      "message": "Minimum {value} characters required"
+    },
+    "maxLength": {
+      "value": 255,
+      "message": "Maximum {value} characters allowed"
+    },
+    "pattern": {
+      "email": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+      "url": "^https?://",
+      "phone": "^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$"
+    }
+  }
+}
